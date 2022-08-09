@@ -1,0 +1,85 @@
+=== VERSION HISTORY
+Perubahan Versi dari 2.2.1 sampai 2.2.2
+1. * Bug Fix Tombol Edit dan Delete Data Anggota
+
+Perubahan Versi dari 2.2.0 sampai 2.2.1
+1. + Preview Simulasi Tagihan pada Anggota ketika sebelum Pengajuan
+2. + Anggota Dapat Ubah Nominal, Lama Angsuran dan Keterangan pada Pengajuan yang statusnya masih Pending
+3. + Operator/Pinjaman/Admin dapat Ubah Nominal, Lama Angsuran dan Keterangan pada Pengajuan yang statusnya masih Pending
+4. + Filter Pengajuan Bulanan (Tgl 21 sampai 20).
+5. + Pinjaman -> Bayar: Nampil warna dan status berbeda jika Angsuran Jatuh Tempo
+6. * Bugs fix Pencarian Nama Anggota di Master Data Anggota
+7. * Bugs fix Laporan SHU (jika ada kode akun Pendapatan dan Biaya baru)
+8. * Bugs fix pencarian Nama Anggota di Pinjaman, Bayaran Angsuran dan Pinjaman Lunas
+9. * Bugs Fix Lainnya
+ 
+
+Perubahan Versi dari 2.1 sampai 2.2.0
+1. Bugs fix Laporan Pinjaman
+
+Perubahan Versi dari 2.0 sampai 2.1
+===================================
+1. Bugs fix.
+
+Perubahan Versi dari 1.9 sampai 2.0
+===================================
+1. Penambahan Tampilan Simulasi Pembayaran Pinjaman (detail pinjaman)
+2. Penambahan pencarian Nama Anggota pada menu Pinjaman, Pembayaran dan Pelunasan
+3. Bugs fix lainnya.
+
+
+Perubahan Versi dari 1.8 sampai 1.9
+===================================
+1. Ajuan Pinjaman ditambah kolom cetak sisa pelunasan
+2. Dari User Anggota mengetahui tanggal cair ajuan jika disetujui
+3. Bugs fix lainnya.
+
+
+Perubahan Versi dari 1.7 sampai 1.8
+===================================
+1. Semua cetak PDF tampil preview terlebih dahulu, bukan langsung download (browser PDF viewer)
+2. Form - Pilih Anggota - ditambah kolom identitas dan departement
+3. Level pinjaman - mengetahui posisi sisa pinjaman (jmlh angsuran - dan brp bln)
+4. Form - nominal menggunakan number format di pinjaman jenis Uang.
+5. Bugs fix lainnya.
+
+Perubahan Versi dari 1.6 sampai 1.7
+===================================
+1. Penambahan fitur Pengajuan Pinjaman
+2. Rumus Hitungan Pinjaman Bunga menggunakan 2 tipe:
+	A. Bunga dikalikan dengan angsuran pokok per bulan
+	B. Bunga dikalikan dengan total jumlah pinjaman
+	- Dapat diatur di Setting -> Suku Bunga
+3. Pengambahan Kolom anggota, yaitu Departement
+4. Perubahan hampir seluruh laporan ID Anggota isinya adalah kolom "identitas".
+5. Form tambah Penarikan Simpanan menyesuaikan jumlah total kepemilikan Anggota.
+
+
+Perubahan Versi dari 1.5 sampai 1.6
+===================================
+1. Laporan Neraca Saldo Lebih Fleksibel Untuk Jenis Akun
+2. Laporan Laba Rugi sekarang sudah ada estimasi pendapatan, terpisah biaya adm, bunga, pembulatan dan estimasi keuntungan.
+
+Perubahan Versi dari 1.4 sampai 1.5
+===================================
+- Jenis Pinjaman Barang, dengan type Uang, silahkan lihat screenshot folder EXTRA/TYPE_BARANG_UANG/
+- Penambahan fitur login member:
+1. Laporan History Simpanan dan Tarikan dana
+2. Laporan History Pinjaman
+3. Laporan History Pembayaran Pinjaman
+- dan beberapa bugs fix lainnya
+
+Perubahan Versi dari 1.0 sampai 1.4
+===================================
+1. Anggota dapat login, menggunakan link member:
+alamat misal localhost url: http://localhost/koperasi_ci/member
+atau klik langsung pada button Member
+Login username menggunakan kolom "identitas".
+
+2. Admin dapat import data anggota dari file excel
+ikuti aturan contoh data file "/EXTRA/contoh_import_anggota.xlsx"
+Untuk menghindar pembatasan import data, ubah atau tambahkan jika blm ada di php.ini
+max_input_vars = 50000
+Disarankan untuk upload data anggota sekali import tdk lebih dari 1000 data, untuk menghindar timeout server dan batasan2 web server.
+
+3. Anggota dapat ubah password dan ubah profile pic.
